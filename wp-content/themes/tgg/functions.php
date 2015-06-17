@@ -49,6 +49,8 @@ function business_one_scripts_styles() {
 
 	wp_enqueue_script('masonry');
 
+	wp_enqueue_script('main',get_template_directory_uri().'/js/main.js',array('jquery'),'',true);
+
 	wp_enqueue_script('fittext',get_template_directory_uri().'/js/fittext.js',array('jquery'),'',true);
 
 	wp_enqueue_script('fitvids',get_template_directory_uri().'/js/fitvids.js',array('jquery'),'',true);
